@@ -1,0 +1,72 @@
+@keyframes gradientMovement {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(45deg, #ffd700, #ffa500, #ffd700, #ffa500);
+  background-size: 200% 200%;
+  animation: gradientMovement 10s infinite;
+}
+
+.container {
+  text-align: center;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 80%;
+}
+
+.logo {
+  margin-bottom: 20px;
+}
+
+.logo img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  /border: 3px solid #333;
+}
+
+.bibliografia {
+  margin-top: 20px;
+}
+
+.section {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.footer {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.footer a {
+  color: #ffd700;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
