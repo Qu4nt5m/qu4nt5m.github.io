@@ -3,67 +3,103 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bibliografía de Quantum</title>
+    <title>Mi Portafolio</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="container">
-      <div class="logo">
-        <img src="img/Quantum.jpg" alt="Logo de Quantum" />
-      </div>
-      <div class="section">
-        <h1>Quantum</h1>
-        <h3>
-          Especialista en Configuración y Desarrollo de Servidores de Minecraft
-        </h3>
-      </div>
-      <div class="section">
-        <p>
-          Con más de dos años de experiencia en el ámbito de servidores de
-          Minecraft, he adquirido habilidades especializadas que me permiten
-          destacar en el campo. Mi experiencia se extiende a:
-        </p>
-      </div>
-      <div class="section">
+    <header>
+      <h1>Mi Portafolio</h1>
+      <nav>
         <ul>
-          <li>
-            <strong>Configuración avanzada de servidores:</strong> Capacidad
-            para configurar y optimizar servidores de Minecraft para garantizar
-            un rendimiento óptimo y una experiencia de juego ininterrumpida.
-          </li>
-          <li>
-            <strong>Desarrollo de servidores:</strong> Habilidad para
-            desarrollar y personalizar servidores según las necesidades
-            específicas del cliente o proyecto.
-          </li>
-          <li>
-            <strong>Manejo de servidores dedicados:</strong> Experiencia en la
-            gestión y mantenimiento de servidores dedicados, garantizando su
-            seguridad y eficiencia.
-          </li>
-          <li>
-            <strong>Developer en paneles de Pterodactyl:</strong> Experto en la
-            implementación y personalización de paneles de Pterodactyl, una
-            solución líder para la gestión de servidores de juegos.
-          </li>
+          <li><a href="#sobre-mi">Sobre mí</a></li>
+          <li><a href="#proyectos">Proyectos</a></li>
+          <li><a href="#contacto">Contacto</a></li>
         </ul>
+      </nav>
+    </header>
+    <section id="sobre-mi">
+      <h2>Sobre mí</h2>
+      <p>
+        Hola, soy Quantum. Me especializo en el desarrollo y configuración de
+        plugins para Minecraft. Con un profundo conocimiento en la
+        administración de servidores, también diseño addons para paneles
+        Pterodactyl. Te invito a explorar mi portafolio y conocer más sobre mi
+        experiencia y habilidades en el ámbito del desarrollo y gestión de
+        servidores de juegos.
+      </p>
+      <div class="info-personal">
+        <h3>Información Personal</h3>
+        <p><strong>Carrera:</strong> Ing. de Sistemas e Informatica</p>
+        <p><strong>Edad:</strong> 19 años</p>
+        <p><strong>Ubicación:</strong> Lima, Perú</p>
       </div>
-      <div class="section">
+      <img src="img/Quantum.jpg" alt="Foto Quantum" />
+    </section>
+
+    <section id="proyectos">
+      <h2>Proyectos</h2>
+
+      <!-- Proyecto WaterCraft -->
+      <div class="proyecto">
+        <div class="titulo-logo">
+          <img
+            src="img/servers/watercraft.jpg"
+            alt="Logo de WaterCraft"
+            class="logo-proyecto"
+          />
+          <h3>WaterCraft</h3>
+        </div>
         <p>
-          Mi compromiso es ofrecer soluciones de alta calidad, adaptadas a las
-          necesidades de cada proyecto, garantizando la satisfacción del cliente
-          y una experiencia de juego excepcional.
+          Actualmente, formo parte del equipo de desarrollo del servidor
+          WaterCraft. Mi principal responsabilidad es la optimización y
+          configuración del servidor, asegurando una experiencia de juego fluida
+          y estable para todos los jugadores. Mi experiencia abarca desde la
+          implementación de plugins personalizados hasta la gestión avanzada de
+          recursos del servidor.
         </p>
       </div>
-      <div class="footer">
-        <p>&copy; 2023 Quantum. Todos los derechos reservados.</p>
+
+      <!-- Proyecto KnowMC -->
+      <div class="proyecto">
+        <div class="titulo-logo">
+          <img
+            src="img/servers/knowmc.png"
+            alt="Logo de KnowMC"
+            class="logo-proyecto"
+          />
+          <h3>KnowMC</h3>
+        </div>
         <p>
-          Contacto en Discord:
-          <a href="https://discordapp.com/users/1147558705018195978" target="_blank"
-            >qu.ntum</a
-          >
+          En el servidor KnowMC, mi principal responsabilidad es garantizar la
+          protección de la network. Además, me encargo de la configuración
+          integral de los servidores, asegurando que cada componente funcione de
+          manera óptima y segura para todos los usuarios.
         </p>
       </div>
-    </div>
+    </section>
+
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <p>
+        Si estás interesado en trabajar conmigo o simplemente quieres decir
+        hola, ¡no dudes en contactarme!
+      </p>
+      <form action="https://formspree.io/f/xnqkvwre" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" required></textarea>
+
+        <input type="submit" value="Enviar" />
+      </form>
+    </section>
+
+    <footer>
+      <p>© 2023 Quantum Developer. Todos los derechos reservados.</p>
+    </footer>
   </body>
 </html>
